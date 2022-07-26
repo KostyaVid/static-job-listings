@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  padding: 20px 40px;
+  margin-top: 25px;
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+
+  -webkit-box-shadow: 4px 6px 20px 0px rgba(91, 164, 164, 0.3);
+  -moz-box-shadow: 4px 6px 20px 0px rgba(91, 164, 164, 0.3);
+  box-shadow: 4px 6px 20px 0px rgba(91, 164, 164, 0.3);
+
+  animation-name: animPost;
+  animation-duration: 0.5s;
+
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+  will-change: scroll-position;
+}
+
+@keyframes animPost {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.borderLeft {
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  left: 0;
+  top: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: var(--primary);
+}
